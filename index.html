@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book Sukkur — Hotels & Rooms</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">B</span><span>Book <b>Sukkur</b></span></div>
+  <nav><a href="#hotels">Hotels</a><a href="#how">How it works</a><button id="myBooking">My Booking</button></nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">SUKKUR, SINDH</p>
+    <h1>Find your stay in <span>Sukkur</span></h1>
+    <p class="sub">Search hotels, compare rooms and request your booking online.</p>
+    <form id="searchForm" class="search">
+      <label>Where<input id="q" placeholder="Hotel, area or Sukkur" value="Sukkur"></label>
+      <label>Check-in<input id="checkin" type="date"></label>
+      <label>Check-out<input id="checkout" type="date"></label>
+      <label>Guests<input id="guests" type="number" min="1" value="2"></label>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</section>
+
+<main>
+<section id="hotels" class="section">
+  <div class="section-head"><div><p class="eyebrow">STAYS</p><h2>Popular hotels in Sukkur</h2></div><span id="resultCount"></span></div>
+  <div id="hotelGrid" class="grid"></div>
+</section>
+
+<section id="how" class="how section">
+  <p class="eyebrow">SIMPLE BOOKING</p><h2>How Book Sukkur works</h2>
+  <div class="steps">
+    <div><b>1</b><h3>Search</h3><p>Choose your dates, guests and preferred area.</p></div>
+    <div><b>2</b><h3>Compare</h3><p>Review hotel details, ratings and prices.</p></div>
+    <div><b>3</b><h3>Book</h3><p>Send your booking request directly from the site.</p></div>
+  </div>
+</section>
+</main>
+
+<div id="modal" class="modal hidden">
+ <div class="modal-card">
+   <button class="close" onclick="closeModal()">×</button>
+   <div id="modalContent"></div>
+ </div>
+</div>
+<footer>© 2026 Book Sukkur · Hotel booking platform</footer>
+<script src="/app.js"></script>
+</body>
+</html>
