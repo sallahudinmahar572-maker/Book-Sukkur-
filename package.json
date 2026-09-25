@@ -1,0 +1,14 @@
+{
+  "name": "book-sukkur",
+  "version": "1.0.0",
+  "description": "Book Sukkur - hotel and room booking MVP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.2"
+  }
+}
